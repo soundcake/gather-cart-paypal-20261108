@@ -4,6 +4,8 @@ Gather Cart helps community workshop organizers buy enough materials for their g
 
 The catalogue is a small, fictional demonstration catalogue in USD: sketching, seed starting and notebook binding. An “already have” selection means there is enough of that material for the entire group. Quantities, prices and order totals come from the server catalogue; model output contains only an activity and an explanation.
 
+[Watch the 1-minute-49-second project demo](https://youtu.be/wfgnIhd8NPs).
+
 ## Run the sample rehearsal
 
 Python 3.9 or later is sufficient. No dependencies, accounts or keys are needed.
