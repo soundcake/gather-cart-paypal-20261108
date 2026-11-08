@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Gather Cart · A little planning, more making</title><link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script></head>
+<body><header><a class="brand" href="/">gather<span>cart</span></a><span class="badge" id="mode">Loading</span></header>
+<main><section class="intro"><p class="eyebrow">FOR THE PEOPLE WHO BRING PEOPLE TOGETHER</p><h1>A little planning.<br>More <em>making.</em></h1><p>Turn a workshop idea into enough materials for everyone.<br>Start with what you have. Keep the basket within reach.</p></section>
+<div class="workspace"><section class="card brief"><div class="section-title"><span class="step">01</span><h2>The gathering</h2></div>
+<form id="planner"><label for="brief">What would you like to make?</label><textarea id="brief" minlength="8" maxlength="600" required></textarea>
+<div class="examples" aria-label="Example workshop briefs"><button type="button" data-sample="sketching">Sketch together</button><button type="button" data-sample="seed-starting">Start a garden</button><button type="button" data-sample="bookbinding">Make notebooks</button></div>
+<div class="pair"><label>People<input type="number" id="people" min="1" max="60" value="12" required></label><label>Budget · USD<input type="number" id="budget" min="1" max="1000" step="0.01" value="30" required></label></div>
+<fieldset><legend>Already have enough for everyone?</legend><p class="hint">Tick materials you can bring for the entire group.</p><div id="owned" class="owned"></div></fieldset>
+<button class="primary" id="plan-button">Plan my basket <span aria-hidden="true">↗</span></button></form>
+<p class="error" id="error" role="alert"></p></section>
+<section class="card basket" aria-live="polite"><div class="section-title"><span class="step">02</span><h2>Your materials</h2></div>
+<div id="empty"><div class="illustration" aria-hidden="true"><span class="pot">✦</span><span class="pencil"></span><span class="sheet"></span></div><h3>Good things start with a plan.</h3><p>Choose an idea and group size.<br>We’ll work out the packs you need.</p></div>
+<div id="result" hidden><div class="result-heading"><div><p id="group" class="eyebrow"></p><h3 id="title"></h3></div><span id="fit" class="fit"></span></div><p id="reason"></p><ul id="items"></ul><div class="total"><span>Basket total</span><strong id="total"></strong></div><p id="remaining"></p><p id="freshness" class="notice" hidden>Details changed. Plan again to update this basket.</p><button id="checkout" class="primary">Review in PayPal sandbox ↗</button><button id="capture" class="secondary" hidden>Confirm sandbox payment</button><p id="checkout-note" class="hint"></p><p id="receipt" class="notice" hidden></p></div>
+</section></div><footer><span>Thoughtful supplies. Shared moments.</span><span>USD · Sample catalogue · Sandbox checkout</span></footer></main></body></html>
